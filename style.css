@@ -1,0 +1,10 @@
+h1 {
+    color: black;
+    font-family: Verdana;
+    font-size: 40px;
+}
+
+canvas {
+    border: 5px solid black;
+    background-color: grey;
+}
