@@ -78,21 +78,22 @@ function draw() {
         ball.dx = -ball.dx;
     }
 
-    if (
-        ball.y + ball.dy < ball.radius ||
+    if
         (ball.y + ball.dy > canvas.height - ball.radius - paddle.height &&
-            ball.x > paddle.x &&
+           ball.x > paddle.x &&
             ball.x < paddle.x + paddle.width)
-    ) {
-        ball.dy = -ball.dy;
+       
+    {   ball.dy = -ball.dy;
         score++;
     }
+    
+    if (ball.y < 0) {ball.dy = -ball.dy}
 
     if (ball.y + ball.radius > canvas.height) {
         ball.x = canvas.width / 2;
         ball.y = canvas.height / 2;
-        ball.dx = 2;
-        ball.dy = -2;
+        ball.dx = 4;
+        ball.dy = -4;
     }
 
     if (rightPressed && paddle.x < canvas.width - paddle.width) {
