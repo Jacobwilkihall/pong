@@ -8,8 +8,27 @@
 </head>
 <body>
     <center><h1>Jacob's Game</h1></center>
+    <p>Play play button to listen to backgroud music</p>
     <canvas id="gameCanvas" width="800" height="600"></canvas>
+    <audio id="backgroundMusic">
+        <source src="bgm.mp3" type="audio/mpeg">
+        
+    </audio>
+    <button id="playButton">Play</button>
+    <button id="pauseButton">Pause</button>
     <script src="game.js"></script>
+    <script>
+        const backgroundMusic = document.getElementById('backgroundMusic');
+        const playButton = document.getElementById('playButton');
+        const pauseButton = document.getElementById('pauseButton');
 
+        playButton.addEventListener('click', () => {
+            backgroundMusic.play();
+        });
+
+        pauseButton.addEventListener('click', () => {
+            backgroundMusic.pause();
+        });
+    </script>
 </body>
 </html>
