@@ -9,26 +9,26 @@ canvas {
     background-color: grey;
 }
 
-        body {
-            background-color: #f0f0f0;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-        }
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
 
-        h1 {
-            color: #333;
-        }
+h1 {
+    color: #333;
+}
 
 
 
-        audio {
-            display: block;
-            margin: 20px auto;
-        }
+audio {
+    display: block;
+    margin: 20px auto;
+}
 
-        button {
+button {
     font-size: 18px;
     padding: 10px 20px;
     margin: 10px;
@@ -38,11 +38,56 @@ canvas {
     border-radius: 5px;
     cursor: pointer;
     outline: none;
-        }
+}
 
-        button:hover {
-            background-color: #555;
-        }
+button:hover {
+    background-color: #555;
+}
+/* Style the menu */
+#audioControls {
+    background: black;
+    color: white;
+    padding: 10px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 5px;
+}
+
+        /* Style the play and pause buttons */
+.icon-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+/* CSS for play and pause buttons */
+#playPauseButtons {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.play-pause-button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.play-pause-button:hover {
+    background-color: #2980b9;
+}
+
+
 
 
 /* Styling for the info button and pop-up */
