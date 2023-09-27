@@ -9,19 +9,33 @@
 <body>
     <center><h1>Jacob's Game</h1></center>
     <p>Play the play button to listen to background music</p>
-        <!-- Info button -->
-<button id="infoButton">Info</button>
-<div id="infoPopup">
-    <button id="exitButton">Exit</button>
-    <p>How to play:</p>
-    <p>Use the left and right arrow keys to move the paddle.</p>
-</div>
+    
+    <!-- Info button -->
+    <button id="infoButton">Info</button>
+    <div id="infoPopup">
+        <button id="exitButton">Exit</button>
+        <p>How to play:</p>
+        <p>Use the left and right arrow keys to move the paddle.</p>
+    </div>
+    
     <canvas id="gameCanvas" width="800" height="600"></canvas>
     <audio id="backgroundMusic">
         <source src="bgm.mp3" type="audio/mpeg">
     </audio>
-    <button id="playButton">Play</button>
-    <button id="pauseButton">Pause</button>
+    
+    <!-- Audio Controls menu -->
+    <div id="audioControls">
+        <p>Audio Controls</p>
+        <!-- Play button with Unicode symbol -->
+        <button id="playButton" class="icon-button">
+            &#9658;
+        </button>
+        <!-- Pause button with Unicode symbol -->
+        <button id="pauseButton" class="icon-button">
+            &#10074;&#10074;
+        </button>
+    </div>
+    
     <script src="game.js"></script>
     <script src="script.js"></script>
 </body>
