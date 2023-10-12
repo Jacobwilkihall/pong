@@ -109,6 +109,10 @@ function draw() {
     if (gameStarted) {
         requestAnimationFrame(draw);
     }
+
+    if (paddle.istouching (ball)) {
+drawBall ctx.fillStyle = "#000000";
+    }
 }
 
 // Style the canvas
