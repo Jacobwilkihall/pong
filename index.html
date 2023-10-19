@@ -1,41 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Set character encoding and viewport for responsive design -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Link to external stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <!-- Logo image -->
     <img src="logo.png">
+    
+    <!-- Paragraph with instructions -->
     <p>Play the play button to listen to background music</p>
     
     <!-- Info button -->
     <button id="infoButton">Info</button>
+    
+    <!-- Popup for game information -->
     <div id="infoPopup">
+        <!-- Button to close the information popup -->
         <button id="exitButton">Exit</button>
+        
+        <!-- Game instructions -->
         <p>How to play:</p>
         <p>Use the left and right arrow keys to move the paddle.</p>
     </div>
     
+    <!-- Canvas for the game -->
     <canvas id="gameCanvas" width="800" height="600"></canvas>
+    
+    <!-- Background music audio element -->
     <audio id="backgroundMusic">
+        <!-- Specify the audio file and its type -->
         <source src="bgm.mp3" type="audio/mpeg">
     </audio>
     
     <!-- Audio Controls menu -->
     <div id="audioControls">
+        <!-- Heading for the audio controls -->
         <p>Audio Controls</p>
-        <!-- Play button with Unicode symbol -->
+        
+        <!-- Play button with Unicode play symbol -->
         <button id="playButton" class="icon-button">
             &#9658;
         </button>
-        <!-- Pause button with Unicode symbol -->
+        
+        <!-- Pause button with Unicode pause symbols -->
         <button id="pauseButton" class="icon-button">
             &#10074;&#10074;
         </button>
     </div>
     
+    <!-- JavaScript files for game functionality -->
     <script src="game.js"></script>
     <script src="script.js"></script>
 </body>
